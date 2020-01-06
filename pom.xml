@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>deep-blue</artifactId>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>com.orchestranetworks.training.ebx.daqa</groupId>
+		<artifactId>ebx-daqa-training-workspace</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<properties>
+		<!-- Project -->
+		<project.classes.directory>${project.basedir}/src/main/webapp/WEB-INF/classes</project.classes.directory>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>${artifact.servlet-api.group}</groupId>
+			<artifactId>${artifact.servlet-api.artifact}</artifactId>
+			<version>${artifact.servlet-api.version}</version>
+			<classifier>${artifact.servlet-api.classifier}</classifier>
+			<type>${artifact.servlet-api.type}</type>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>${artifact.ebx-api.group}</groupId>
+			<artifactId>${artifact.ebx-api.artifact}</artifactId>
+			<version>${artifact.ebx-api.version}</version>
+			<classifier>${artifact.ebx-api.classifier}</classifier>
+			<type>${artifact.ebx-api.type}</type>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<outputDirectory>${project.classes.directory}</outputDirectory>
+
+		<resources>
+			<resource>
+				<directory>${project.build.sourceDirectory}</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${project.classes.directory}</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>inplace</id>
+						<phase>package</phase>
+						<goals>
+							<goal>inplace</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

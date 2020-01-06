@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="src/main/webapp/WEB-INF/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/commons-beanutils-1.9.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/commons-csv-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/commons-lang3-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/commons-text-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/ebx.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/ebx-addons.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/h2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/javolution-core-java-6.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/opencsv-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/poi-3.9-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/poi-ooxml-3.9-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/pooja.hd.jain/DeepBlueAutomation/DeepBlue/Novartis DeepBlue/workspaces/ebx-daqa-training/ebx-server/lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="output" path="src/main/webapp/WEB-INF/classes"/>
+</classpath>

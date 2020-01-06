@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XML schema generated from EBX5 DMA instance [reference=HRDataModel] on Tue May 29 13:31:49 EDT 2018 by user [dataanalyst1].-->
+<xs:schema xmlns:osd="urn:ebx-schemas:common_1.0" xmlns:fmt="urn:ebx-schemas:format_1.0" xmlns:ebxbnd="urn:ebx-schemas:binding_1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ebxs="urn:ebx-schemas:session_1.0">
+    <xs:import namespace="urn:ebx-schemas:common_1.0" schemaLocation="http://schema.orchestranetworks.com/common_1.0.xsd"/>
+    <xs:import namespace="urn:ebx-schemas:session_1.0" schemaLocation="http://schema.orchestranetworks.com/session_1.0.xsd"/>
+    <xs:include schemaLocation="urn:ebx:module:ebx-addon-daqa:/WEB-INF/ebx/schema/ebx-addon-daqa-types.xsd"/>
+    <xs:annotation>
+        <xs:appinfo>
+            <osd:inheritance>
+                <dataSetInheritance>all</dataSetInheritance>
+            </osd:inheritance>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="root" osd:access="--">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Employee" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Employees</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/ssn </primaryKeys>
+                                <index name="dq_metadata_complete">/DaqaMetaData/ClusterId /DaqaMetaData/Score /DaqaMetaData/State /ssn </index>
+                                <index name="dq_state">/DaqaMetaData/State </index>
+                                <index name="dq_score">/DaqaMetaData/Score </index>
+                                <index name="dq-metadata_light">/DaqaMetaData/ClusterId /DaqaMetaData/Score /ssn </index>
+                                <historyProfile>ebx-allBranches</historyProfile>
+                                <defaultLabel>${./firstname} ${./lastname}</defaultLabel>
+                                <defaultView>
+                                    <displayOfGroups>tab</displayOfGroups>
+                                </defaultView>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ssn" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>SSN</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="11"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="DaqaMetaData" type="DaqaMetaData">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Matching metadata</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="source" minOccurs="0" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="firstname" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>First Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="30"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="lastname" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Last Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="30"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="address" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="zipcode" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Postal Code</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="state" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>State</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="city" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>City</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="dateOfBirth" type="xs:date" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Date of Birth</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="contacts" type="xs:string" minOccurs="0" maxOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Contacts</osd:label>
+                                    </xs:documentation>
+                                    <xs:appinfo>
+                                        <osd:association>
+                                            <tableRefInverse>
+                                                <fieldToSource>/root/Contact/employee</fieldToSource>
+                                            </tableRefInverse>
+                                            <minOccurs>
+                                                <value>0</value>
+                                            </minOccurs>
+                                            <maxOccurs>
+                                                <value>10</value>
+                                            </maxOccurs>
+                                        </osd:association>
+                                        <osd:defaultView>
+                                            <hiddenInDataServices>true</hiddenInDataServices>
+                                            <displayMode>tab</displayMode>
+                                        </osd:defaultView>
+                                    </xs:appinfo>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="positions" type="xs:string" minOccurs="0" maxOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Positions</osd:label>
+                                    </xs:documentation>
+                                    <xs:appinfo>
+                                        <osd:association>
+                                            <tableRefInverse>
+                                                <fieldToSource>/root/Position/ssn</fieldToSource>
+                                            </tableRefInverse>
+                                        </osd:association>
+                                        <osd:defaultView>
+                                            <hiddenInDataServices>true</hiddenInDataServices>
+                                            <displayMode>tab</displayMode>
+                                        </osd:defaultView>
+                                    </xs:appinfo>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Contacts</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/id </primaryKeys>
+                                <index name="dq_metadata_complete">/DaqaMetaData/ClusterId /DaqaMetaData/Score /DaqaMetaData/State /id </index>
+                                <index name="dq_state">/DaqaMetaData/State </index>
+                                <index name="dq_score">/DaqaMetaData/Score </index>
+                                <index name="dq-metadata_light">/DaqaMetaData/ClusterId /DaqaMetaData/Score /id </index>
+                                <historyProfile>ebx-allBranches</historyProfile>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:int" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:appinfo>
+                                        <osd:autoIncrement/>
+                                    </xs:appinfo>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="DaqaMetaData" type="DaqaMetaData">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Matching metadata</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="telephone" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Telephone</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="15"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="email" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Email</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="type" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ssn" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>SSN</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="employee" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Employee</osd:label>
+                                    </xs:documentation>
+                                    <xs:appinfo>
+                                        <osd:otherFacets>
+                                            <osd:tableRef>
+                                                <tablePath>/root/Employee</tablePath>
+                                                <display>
+                                                    <pattern>${./lastname}</pattern>
+                                                </display>
+                                            </osd:tableRef>
+                                        </osd:otherFacets>
+                                        <osd:defaultView/>
+                                    </xs:appinfo>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="address" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address</osd:label>
+                                    </xs:documentation>
+                                    <xs:appinfo>
+                                        <osd:inheritance>
+                                            <sourceRecord>/root/Contact/employee</sourceRecord>
+                                            <sourceNode>./address</sourceNode>
+                                        </osd:inheritance>
+                                    </xs:appinfo>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="JobTitle" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Job Titles</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/code </primaryKeys>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="code" type="xs:int" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Code</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="DaqaMetaData" type="DaqaMetaData">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Matching metadata</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Position" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Positions</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/ssn /jobTitle </primaryKeys>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ssn" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>SSN</osd:label>
+                                    </xs:documentation>
+                                    <xs:appinfo>
+                                        <osd:otherFacets>
+                                            <osd:tableRef>
+                                                <tablePath>/root/Employee</tablePath>
+                                            </osd:tableRef>
+                                        </osd:otherFacets>
+                                    </xs:appinfo>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="jobTitle" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Job Title</osd:label>
+                                    </xs:documentation>
+                                    <xs:appinfo>
+                                        <osd:otherFacets>
+                                            <osd:tableRef>
+                                                <tablePath>/root/JobTitle</tablePath>
+                                            </osd:tableRef>
+                                        </osd:otherFacets>
+                                    </xs:appinfo>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="DaqaMetaData" type="DaqaMetaData">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Matching metadata</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="startDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Start Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>End Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

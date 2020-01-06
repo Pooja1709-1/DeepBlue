@@ -1,0 +1,2797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XML schema generated from EBX5 DMA instance [reference=deepblue] on Fri Nov 08 16:29:43 IST 2019 by user [administrator].-->
+<xs:schema xmlns:osd="urn:ebx-schemas:common_1.0" xmlns:fmt="urn:ebx-schemas:format_1.0" xmlns:ebxbnd="urn:ebx-schemas:binding_1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ebxs="urn:ebx-schemas:session_1.0">
+    <xs:import namespace="urn:ebx-schemas:common_1.0" schemaLocation="http://schema.orchestranetworks.com/common_1.0.xsd"/>
+    <xs:import namespace="urn:ebx-schemas:session_1.0" schemaLocation="http://schema.orchestranetworks.com/session_1.0.xsd"/>
+    <xs:annotation>
+        <xs:appinfo>
+            <osd:inheritance>
+                <dataSetInheritance>all</dataSetInheritance>
+            </osd:inheritance>
+            <ebxbnd:binding targetDirectory="C:\EBX\Novartis DeepBlue\workspaces\ebx-daqa-training\deep-blue\src\main\webapp\..\java">
+                <javaPathConstants typeName="com.acn.ebx.path.Paths">
+                    <nodes root="/root" prefix="" relativeToRoot="false"/>
+                </javaPathConstants>
+            </ebxbnd:binding>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="root" osd:access="--">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CustomerSegment" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>CustomerSegment</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/customerSegmentId </primaryKeys>
+                                <defaultLabel>${./customerSegmentId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="customerSegmentId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Segment ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="brand" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Brand</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tier" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Tier</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="interactionResponse" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Interaction Response</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="keyMessage" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Key Message</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="keyMessageCategory" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Key Message Category</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="portfolioTier" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Portfolio Tier</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="segmentation" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Segmentation</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Address</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/addressId </primaryKeys>
+                                <defaultLabel>${./addressId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="addressId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="isPrimary" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Address</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="addressType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="addressLine1" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address Line 1</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="addressLine2" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address Line 2</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="addressLine3" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address Line 3</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="city" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>City</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="state" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>State</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="province" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Province</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="zip" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Postal Code</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="country" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="brick" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Brick</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="40"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="microbrick" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Microbrick</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="40"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="latitude" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Latitude</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:totalDigits value="40"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="longitude" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Longitude</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:totalDigits value="40"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="height" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Height</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:totalDigits value="40"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="geographicCoordinates" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Geographic Coordinates</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="40"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="effectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Effective Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="addressStatus" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="addressVerificationStatus" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address Verification Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="communication" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Communication</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="RemoteKeys" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>RemoteKeys</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/sourceCode </primaryKeys>
+                                <defaultLabel>${./sourceCode}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="sourceName" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Source Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="sourceCode" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Source Code</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="effectiveDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Effective Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="expirationDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Expiration Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="synchronizationStatus" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Synchronization status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="lastSynchronizedDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Last Synchronized date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="lastSynchronizedStatusUpdatedDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Last Synchronized Status Updated Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="comment" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Comment</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="2000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Customer" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Customer</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/customerId </primaryKeys>
+                                <defaultLabel>${./customerId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="status" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="statusReason" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status Reason</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="statusComment" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status Comment</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="80"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="validationStatus" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Validation Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="country" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="recordTypeId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Record Type ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="recordTypeValue" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Record Type Value</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hco" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>HCO</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="hcp" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>HCP</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="addresses" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Addresses</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="communication" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Communication</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="education" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Education</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="specialty" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Specialty</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="additionalQualification" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Additional Qualification</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerParent" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Parent</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerChildren" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Child</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="consent" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Consent</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerSegment" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Segment</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="credentials" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Credentials</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="crossReferences" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Remote Keys</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="tracking" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Tracking Info</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ConsentDefintion" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>ConsentDefintion</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/ConsentDefintionId </primaryKeys>
+                                <defaultLabel>${./ConsentDefintionId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ConsentDefintionId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Consent Definition ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="consentName" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Consent Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="purpose" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Purpose</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="1000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="characteristics" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Characteristics</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="1000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="sourceLocation" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Source Location</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="collectedBy" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Collected By</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="channel" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Channel</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="HealthCareProfessional" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>HealthCareProfessional</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/hcpId </primaryKeys>
+                                <defaultLabel>${./hcpId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hcpId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Health Care Professional ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="salutation" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Salutation</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="firstName" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>First Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="firstName2" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>First Name 2</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="middleName" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Middle Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="middleName2" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Middle Name 2</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="lastName" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Last Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="lastName2" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Last Name 2</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="fullName" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Full Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="300"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="suffix" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Suffix</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="title" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Title</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="dateOfBirth" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Date of Birth</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="gender" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Gender</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="language" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Language</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="isPortalUser" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Is Portal User?</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>CustomerType</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hcpType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>HCP Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="subType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>HCP Sub Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="kolIndicator" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>KOL Indicator</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="primaryAddressLine1" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Address Line 1</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryAddressLine2" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Address Line 2</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryAddressLine3" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Address Line 3</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryZip" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Zip</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryCity" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary City</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryCountry" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="AdditionalQualification" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>AdditionalQualification</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/additionalQualificationId </primaryKeys>
+                                <defaultLabel>${./additionalQualificationId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="additionalQualificationId" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Additional Qualification ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerID" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="value" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Value</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="status" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Specialty" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Specialty</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/specialtyId </primaryKeys>
+                                <defaultLabel>${./specialtyId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="specialtyId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Specialty ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="type" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Specialty</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="status" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Education" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Education</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/educationId </primaryKeys>
+                                <defaultLabel>${./educationId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="educationId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Education ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="degree" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Degree</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="graduationYear" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Year of Graduation</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="4"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="institution" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Institution</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Consent" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Consent</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/consentId </primaryKeys>
+                                <defaultLabel>${./consentId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="consentId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Consent ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="type" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="value" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Value</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="200"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="status" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="country" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="isGlobal" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>is Global ?</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="dateOfConsent" type="xs:date" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Date of Consent</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="issueExpirationDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Expiration Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="brand" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Brand</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="productId" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Product</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ConsentDefintion" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Consent Definition</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="HealthCareOrganization" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>HealthCareOrganization</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/hcoId </primaryKeys>
+                                <defaultLabel>${./hcoId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hcoId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Health Care Organization ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="name" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="alias" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Alias</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="department" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Department</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="numberOfBeds" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Number of Beds</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:totalDigits value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="theurapticArea" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Theuraptic Area</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hcoLegalEntity" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>HCO Legal Entity</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="requiredCertifications" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Required Certfications</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="groupings" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Groupings</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerType" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>CustomerType</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hcoType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>HCO Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hcoSubType" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>HCO Sub Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryAddressLine1" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Address Line 1</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryAddressLine2" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Address Line 2</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryAddressLine3" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Address Line 3</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="150"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryZip" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Zip</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryCity" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary City</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="primaryCountry" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Primary Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CustomerDCR" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>CustomerDCR</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/Id </primaryKeys>
+                                <defaultLabel>${./Id}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Id" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>DCR ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="dcrType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Request Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="countryRefData" type="xs:string" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="requesterName" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Requester Name</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="novartisComment" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Request Comment</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="500"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="creationDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Creation Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="lastUpdateDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Last Update Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="crmCustomerId" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>CRM Customer Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="status" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="addressNormalization" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address Normalization</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="sentToThirdParty" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Third Party Validation</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="okRequestId" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>One Key Request Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="requestType" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>One Key Request Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="countryISOCode2" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Country ISO Code 2</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="responseStatus" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Response Status??</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="lastStatusUpdateDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Last Response Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="oneKeyComment" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Response Comment</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="200"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="individualEidSource" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Source Individual Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="individualEidValidated" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>OneKey Validated Individual Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="workplaceEidSource" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Source Workplace Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="workplaceEidValidated" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>OneKey Validated Workplace Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="activityEidSource" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Source Activity Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="activityEidValidated" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>OneKey Validated Activity Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="addressEidSource" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Source Address Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="addressEidValidated" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>OneKey Validated Address Id</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="32"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Credentials" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Credentials</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/credentialId </primaryKeys>
+                                <defaultLabel>${./credentialId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="credentialId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Credential ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="type" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="value" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Value</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="200"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="status" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="issueState" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Issue State</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="issueCountry" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Issue Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="issueDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Issue Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="issueExpirationDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Expiration Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Communication</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/communicationId </primaryKeys>
+                                <defaultLabel>${./communicationId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="communicationId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Communication ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="communicationType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Communication Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="type" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="value" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Value</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="status" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Status</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="isPrimary" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Is Primary ?</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Address</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="systemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Affiliation" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en-US">
+                            <osd:label>Affiliation</osd:label>
+                        </xs:documentation>
+                        <xs:appinfo>
+                            <osd:table>
+                                <primaryKeys>/affiliationId </primaryKeys>
+                                <defaultLabel>${./affiliationId}</defaultLabel>
+                            </osd:table>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="affiliationId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Affiliation ID</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="parentId" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Parent</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="childId" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Child</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="13"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="affiliationType" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Affilation Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="linkTYpe" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Link Type</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="256"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="startDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Start Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>End Date</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="isPrimary" type="xs:boolean" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Is Primary</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="nanobrick" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Nanobrick</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="role" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Role</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="customerCountry" minOccurs="1" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Customer Country</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="system" type="xs:string" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="parentSystemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Parent Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="childSystemKey" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Producer System Child Key</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="updatedInMDM" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="en-US">
+                                        <osd:label>Updated in MDM</osd:label>
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
